@@ -15,7 +15,7 @@ def send_welcome(message):
 	bot.send_message(message.chat.id, 'Введите имя любого города')
 @bot.message_handler(commands=['info'])
 def qwerty(message):
-	bot.send_message(message.chat.id, 'Я бот созданый Зайко Валерием.\n' + 'Дата создания: 19.11.2021')
+	bot.send_message(message.chat.id, 'Я бот созданый ValeriyTheCat.\n' + 'Дата создания: 19.11.2021')
 @bot.message_handler(content_types=['text'])
 def maintask(message):
 	observation = mgr.weather_at_place(message.text)
