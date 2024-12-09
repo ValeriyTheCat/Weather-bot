@@ -6,10 +6,10 @@ from pyowm.owm import OWM
 from pyowm.utils.config import get_default_config
 config_dict = get_default_config()
 config_dict['language'] = 'ru'  # paste your language here
-owm = OWM( '2135011185:AAGdemk3VctJywCVHH38nvxCUPk0tr7aNBI', config_dict  )
+owm = OWM( 'your pyOWM api', config_dict  )
 owm = OWM('f173af0fc561a023c0561c674bbc7839')
 mgr = owm.weather_manager()	
-bot = telebot.TeleBot("2135011185:AAGdemk3VctJywCVHH38nvxCUPk0tr7aNBI", parse_mode=None)
+bot = telebot.TeleBot("12th:your telegram bot id", parse_mode=None)
 @bot.message_handler(commands=['start'])
 def send_welcome(message):
 	bot.send_message(message.chat.id, 'Введите имя любого города')
